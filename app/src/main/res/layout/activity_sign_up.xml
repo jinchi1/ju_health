@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62.5dp"
+        android:textSize="14.25dp"
+        android:text="회원가입"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="110.5dp"
+            android:layout_height="122dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="62dp"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edtText_id"
+            android:hint="e-mail"
+            android:background="@drawable/id_frame"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edtText_password"
+            android:hint="password"
+            android:background="@drawable/id_frame"
+            android:gravity="center"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edtText_passwordConfirm"
+            android:hint="password confirm"
+            android:background="@drawable/id_frame"
+            android:gravity="center"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:layout_marginTop="33dp"
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/signup_red"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

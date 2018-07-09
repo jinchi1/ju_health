@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="globesoft.ju_heath.Activity.FindPWActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60.75dp"
+        android:text="회원 정보 입력"
+        android:textStyle="bold"
+        android:gravity="center" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="209dp"
+    android:text="비밀번호를 찾으실\n이메일을 입력해주세요."
+    android:textSize="15dp"
+    android:gravity="center"
+    android:textColor="#9798a6"/>
+    <EditText
+        android:id="@+id/Edt_mail"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:background="@drawable/id_frame"
+        android:hint="address"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sign_ok_red"
+        android:layout_marginTop="13.75dp"
+        android:id="@+id/sendPW_btn"
+   />
+
+</LinearLayout>

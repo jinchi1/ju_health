@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:theme="@style/Translucent"
+    android:background="@drawable/search_frame"
+    android:paddingRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:paddingLeft="15dp">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+
+        <EditText
+            android:id="@+id/Edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="30.5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:hint="코치이름, 체육관으로 검색"
+            android:textSize="12dp"
+            android:background="@drawable/search_edt_frame"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:textColorHint="#9798a6"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="40dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="#ee2b47"/>
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+    </ListView>
+
+</LinearLayout>

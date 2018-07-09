@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="23.5dp"
+    android:layout_marginRight="24.5dp">
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/profile_man"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_pager_content_row_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#262a4f"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="9.5dp"
+                android:text="grace 회원님이 08:00 PT수업 예약하셨습니다."/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/news_pager_regdate_txt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#b9b9b9"
+            android:textSize="11dp"
+            android:text="1시간 전"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e3e4e8"/>
+
+
+</LinearLayout>

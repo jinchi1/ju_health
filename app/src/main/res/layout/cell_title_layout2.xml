@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+    android:background="@drawable/member_frame"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_weight="2.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/member_photoImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profile_man"
+            />
+
+
+    </RelativeLayout>
+    <!-- RIGHT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="5dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="이재진"
+            android:textSize="13.75dp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:id="@+id/ptLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/nameTextView"
+            android:layout_alignLeft="@+id/nameTextView"
+            android:layout_marginTop="12.25dp">
+
+            <ImageView
+                android:id="@+id/connectImageView"
+                android:layout_width="63dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon_connect"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/phoneImageView"
+            android:layout_width="15dp"
+            android:layout_height="22.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/icon_phone_grey"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

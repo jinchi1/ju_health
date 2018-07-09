@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/setting_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fefefe">
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="52dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정"
+                android:textSize="16dp"
+                android:textColor="#262a4f"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="bottom"
+        android:background="#ee2b47"/>
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textSize="16.5dp"
+            android:textColor="#262a4f"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/policy_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 처리방침"
+            android:textSize="16.5dp"
+            android:textColor="#262a4f"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center">
+
+    <!--### 자격증 ###-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/title_icon"
+                android:layout_width="20.25dp"
+                android:layout_height="23.25dp"
+                android:src="@drawable/license_icon"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginLeft="8.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454444"
+                android:textSize="12.5dp"
+                android:text="자격증"
+                android:gravity="center_vertical|left"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <LinearLayout
+                    android:id="@+id/info_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="23dp"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/more_btn"
+                        android:layout_width="15dp"
+                        android:layout_height="3dp"
+                        android:src="@drawable/more_btn"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/title_edit_icon"
+                android:layout_marginLeft="16.5dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/edit_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#262a4f"
+                android:text="생활스포츠지도강사\n
+    심폐소생술 자격증\n
+    스킨스쿠버 오픈워터 자격증\n
+    다수 잡지 촬영 및 기사\n
+    뉴발란스 에너지런 시즌2\n
+    트레이닝 지도강사"
+                android:textSize="12.5dp"
+                android:gravity="center_vertical|right"
+                android:paddingRight="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

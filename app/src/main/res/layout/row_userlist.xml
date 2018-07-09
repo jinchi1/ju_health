@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="82.5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="82.5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImageView"
+                android:layout_marginLeft="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/profile_man"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/callLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:text="주퍼맨" />
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#32b95a"
+                        android:textSize="12.5dp"
+                        android:text="전화하기"
+                        android:layout_marginTop="4.75dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signCallLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|bottom"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PT  "
+                            android:textSize="14.25dp"/>
+                        <TextView
+                            android:id="@+id/nowCountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="14.25dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textSize="14.25dp"/>
+                        <TextView
+                            android:id="@+id/totalCountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginRight="17dp"
+                            android:textSize="14.25dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:paddingTop="5dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="12.5dp"
+                            android:src="@drawable/sign_icon"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>

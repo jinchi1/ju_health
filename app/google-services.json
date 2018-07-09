@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "1064578146304",
+    "firebase_url": "https://juperman-b7d2b.firebaseio.com",
+    "project_id": "juperman-b7d2b",
+    "storage_bucket": "juperman-b7d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064578146304:android:da9082c4d79934c8",
+        "android_client_info": {
+          "package_name": "globesoft.ju_heath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064578146304-09i0ac7mna0iqpl7l9tf667dch25d3s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "globesoft.ju_heath",
+            "certificate_hash": "09c58a9767c0b469069f044d420210fe16c8f2af"
+          }
+        },
+        {
+          "client_id": "1064578146304-m7q9o3bek83oolful5hnok70nj7l12qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhYa2mYrpmmt6BFWRk8ZwIXjJYwuLSEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064578146304-ffiu89eoonkmjf56m3ltgng6lv3j28kg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GlobeSoft.Sample"
+              }
+            },
+            {
+              "client_id": "1064578146304-m7q9o3bek83oolful5hnok70nj7l12qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

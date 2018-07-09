@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="ContentImageBadgeTitle" parent="AppTheme">
+        <item name="android:alpha">0.5</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="ContentImageBadgeText" parent="AppTheme">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="ContentMainBadgeTitle" parent="AppTheme">
+        <item name="android:textColor">@color/contentBadgeTitle</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="TitleBadgeText" parent="AppTheme">
+        <item name="android:textColor">@color/titleBadgeText</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="TitleBadgeTitle" parent="AppTheme">
+        <item name="android:textColor">@color/titleBadgeTitle</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    ////////////////////////////////////////////////////////////////////////
+
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Light EditTexts -->
+    <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    <style name="Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--<item name="android:background">#33000000</item>-->
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/icon_facebook</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="GoogleLoginButton">
+        <item name="android:background">@drawable/icon_google</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:src">@null</item>
+    </style>
+
+
+
+</resources>

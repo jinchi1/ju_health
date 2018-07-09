@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fefefe">
+
+        <LinearLayout
+            android:layout_width="56.5dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/icon_option"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마이페이지"
+                android:textSize="17dp"
+                android:textColor="#262a4f"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="56.5dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/editLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="25dp"
+                    android:layout_height="22.5dp"
+                    android:src="@drawable/profile_edit_botton"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="bottom"
+        android:background="#ee2b47"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.75dp"
+            android:layout_marginTop="28.75dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImageView"
+                android:layout_width="102.5dp"
+                android:layout_height="102.5dp"
+                android:src="@drawable/man_icon" />
+
+
+            <TextView
+                android:id="@+id/titleNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.75dp"
+                android:gravity="center"
+                android:textColor="#262a4f"
+                android:textSize="16.75dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="PT  "
+                    android:textColor="#acacac"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nowPTcountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="05"
+                    android:textColor="#acacac"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textColor="#acacac"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalPTcountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="#acacac"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coach_backgroud"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="41dp"
+            android:paddingRight="41dp"
+            android:paddingTop="09dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--### 이름 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="60px">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/name_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="이름"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/nameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp"
+                            android:gravity="center_vertical|right"
+                            android:singleLine = "true"
+                            android:lines = "1"
+                            android:background="@null"
+                            android:inputType="text"
+                            android:maxLength="10"/>
+
+                    </LinearLayout>
+
+                    <!--### 전화번호 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="60px">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/phone_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="전화번호"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/phoneTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical|right"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="15"
+                            android:singleLine="true"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <!--### 나이 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="60px">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/unique_num_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="나이"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/ageTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical|right"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <!--### 몸무게 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="60px">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/weight_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="몸무게"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/weightTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical|right"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/kg"
+                            android:layout_marginLeft="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kg"
+                            android:textColor="#262a4f"
+                            android:textSize="11dp"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    <!--### 생일 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="60px">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/birth_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="생일"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/birthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <!--### 성별 ###-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20.25dp"
+                            android:layout_height="23.25dp"
+                            android:src="@drawable/gender_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center_vertical|left"
+                            android:text="성별"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/genderTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="#262a4f"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

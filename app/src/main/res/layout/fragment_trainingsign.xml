@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fefefe">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="사인하기"
+            android:textColor="#262a4f"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/EraserImageView"
+            android:layout_width="20.5dp"
+            android:layout_height="19.75dp"
+            android:src="@drawable/eraser_botton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"/>
+
+        <ImageView
+            android:id="@+id/saveImageView"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/save_botton_act"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="bottom"
+        android:background="#ee2b47"/>
+
+    <LinearLayout
+
+        android:background="#fefefe"
+        android:id="@+id/containerLay"
+        android:paddingTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="6dp">
+
+
+
+            <ImageView
+                android:id="@+id/coachSignImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:background="@drawable/non_sign_frame"/>
+            <TextView
+                android:id="@+id/coachTodayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2018.05.01"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textColor="#ececec"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코치님 사인"
+                android:textColor="#cecece"
+                android:textSize="19dp"
+                android:layout_marginTop="11.75dp"
+                android:layout_marginLeft="34.5dp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/coachCanvasLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:background="@drawable/non_sign_frame"/>
+            <TextView
+                android:id="@+id/userTodayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2018.05.01"
+                android:textStyle="bold"
+                android:textSize="36dp"
+                android:textColor="#ececec"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원님 사인"
+                android:textColor="#cecece"
+                android:textSize="19dp"
+                android:layout_marginTop="11.75dp"
+                android:layout_marginLeft="34.5dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/userCanvasLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

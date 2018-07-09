@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="22dp">
+
+
+    <LinearLayout
+        android:id="@+id/startWVLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+        <com.pl.wheelview.WheelView
+            android:id="@+id/wv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:lineColor="#ee2b47"
+            android:layout_marginLeft="5dp"
+            app:normalTextSize="12dp"
+            app:selectedTextSize="13dp"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:textSize="18dp"/>
+        <com.pl.wheelview.WheelView
+            android:id="@+id/wv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:lineColor="#ee2b47"
+            android:layout_marginLeft="5dp"
+            app:normalTextSize="12dp"
+            app:selectedTextSize="13dp"
+            />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="23dp"
+        android:id="@+id/ok"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ok_img"
+            android:layout_width="109dp"
+            android:layout_height="21dp"
+            android:src="@drawable/confirm_btn_white"/>
+    </LinearLayout>
+
+</LinearLayout>

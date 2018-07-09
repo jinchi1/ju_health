@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16.5dp"
+            android:text="프로필 수정"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/modifyButtonLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15.25dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="완료"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="bottom"
+        android:background="#ee2b47"/>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="22.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp">
+
+                <ImageView
+                    android:layout_width="16.5dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/name_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.75dp"
+                    android:text="이름"
+                    android:textSize="16.75dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="이름은 변경할 수 없습니다."
+                    android:textSize="12dp"
+                    android:textColor="#bbbbbb"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:paddingRight="6dp"
+                    android:id="@+id/editTextName"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:cursorVisible="false"
+                    android:background="@null"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="35dp">
+
+                <ImageView
+                    android:layout_width="15.5dp"
+                    android:layout_height="23.25dp"
+                    android:src="@drawable/phone_icon"/>
+
+                <TextView
+                    android:layout_marginLeft="16.25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.5dp"
+                    android:text="전화번호"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:paddingRight="6dp"
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:gravity="right"
+                    android:background="@null"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="34.25dp">
+
+                <ImageView
+                    android:layout_width="17.5dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/gym_icon"/>
+
+                <TextView
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="체육관"
+                    android:textSize="16.5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editTextGym"
+                    android:paddingRight="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:gravity="right"
+                    android:background="@null" />
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="33.25dp">
+
+                <ImageView
+                    android:layout_width="14.5dp"
+                    android:layout_height="22.5dp"
+                    android:src="@drawable/license_icon"/>
+
+                <TextView
+                    android:layout_marginLeft="16.75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자격증"
+                    android:textSize="16.75dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editText_license"
+                    android:paddingRight="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="34dp">
+
+                <ImageView
+                    android:layout_width="20.25dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/awards_icon"/>
+
+                <TextView
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수상경력"
+                    android:textSize="16.5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editText_award"
+                    android:paddingRight="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:background="@null"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="34.75dp">
+
+                <ImageView
+                    android:layout_width="19.75dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/career_icon"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경력"
+                    android:textSize="16.5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editText_career"
+                    android:paddingRight="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:background="@null"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="277dp"
+                    android:layout_height="1.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line_under"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

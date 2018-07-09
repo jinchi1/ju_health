@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/coach_backgroud"
+    android:paddingLeft="34dp"
+    android:paddingRight="32dp"
+    android:paddingTop="24.25dp"
+    android:paddingBottom="41.75dp"
+    android:id="@+id/dynamicArea">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="8dp">
+
+            <!--### 이름 ###-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20.25dp"
+                    android:layout_height="23.25dp"
+                    android:src="@drawable/name_icon"/>
+                <TextView
+                    android:layout_marginLeft="8.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#262a4f"
+                    android:textSize="15dp"
+                    android:text="이름"
+                    android:gravity="center_vertical|left"/>
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_weight="1"
+                    android:textColor="#262a4f"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical|right"
+                    android:singleLine = "true"
+                    android:lines = "1"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:maxLength="10"/>
+
+            </LinearLayout>
+
+            <!--### 전화번호 ###-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20.25dp"
+                    android:layout_height="23.25dp"
+                    android:src="@drawable/phone_icon"/>
+                <TextView
+                    android:layout_marginLeft="8.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#262a4f"
+                    android:textSize="15dp"
+                    android:text="전화번호"
+                    android:gravity="center_vertical|left"/>
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_weight="1"
+                    android:textColor="#262a4f"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical|right"
+                    android:singleLine = "true"
+                    android:lines = "1"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:maxLength="15"/>
+
+            </LinearLayout>
+
+            <!--### 체육관 ###-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20.25dp"
+                    android:layout_height="23.25dp"
+                    android:src="@drawable/gym_icon"/>
+                <TextView
+                    android:layout_marginLeft="8.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#262a4f"
+                    android:textSize="15dp"
+                    android:text="체육관"
+                    android:gravity="center_vertical|left"/>
+
+                <TextView
+                    android:id="@+id/gymTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_weight="1"
+                    android:textColor="#262a4f"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical|right"
+                    android:singleLine = "true"
+                    android:lines = "1"
+                    android:background="@null"
+                    android:maxLength="20"/>
+
+            </LinearLayout>
+
+            <!--### 자격증 ###-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20.25dp"
+                        android:layout_height="23.25dp"
+                        android:src="@drawable/license_icon"/>
+                    <TextView
+                        android:layout_marginLeft="8.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#454444"
+                        android:textSize="15dp"
+                        android:text="자격증"
+                        android:gravity="center_vertical|left"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:id="@+id/licenseBtnLinearLayout"
+                            android:layout_width="100dp"
+                            android:layout_height="23dp"
+                            android:gravity="center_vertical|right">
+
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/licenseDownImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_down_direction"
+                                android:visibility="visible"/>
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/licenseUpImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_up_direction"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/licenseLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/licenseTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#262a4f"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="30dp"
+                        android:background="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--### 수상경력 ###-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20.25dp"
+                        android:layout_height="23.25dp"
+                        android:src="@drawable/awards_icon"/>
+                    <TextView
+                        android:layout_marginLeft="8.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#454444"
+                        android:textSize="15dp"
+                        android:text="수상경력"
+                        android:gravity="center_vertical|left"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:id="@+id/awardBtnLinearLayout"
+                            android:layout_width="100dp"
+                            android:layout_height="23dp"
+                            android:gravity="center_vertical|right">
+
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/awardDownImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_down_direction"
+                                android:visibility="visible"/>
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/awardUpImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_up_direction"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/awardLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/awardTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#262a4f"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="30dp"
+                        android:background="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--### 경력 ##-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20.25dp"
+                        android:layout_height="23.25dp"
+                        android:src="@drawable/career_icon"/>
+                    <TextView
+                        android:layout_marginLeft="8.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#454444"
+                        android:textSize="15dp"
+                        android:text="경력"
+                        android:gravity="center_vertical|left"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:id="@+id/careerBtnLinearLayout"
+                            android:layout_width="100dp"
+                            android:layout_height="23dp"
+                            android:gravity="center_vertical|right">
+
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/careerDownImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_down_direction"
+                                android:visibility="visible"/>
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/careerUpImageView"
+                                android:layout_width="19dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_up_direction"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/careerLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/careerTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#262a4f"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="30dp"
+                        android:background="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

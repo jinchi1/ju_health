@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="375dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작시간"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2018.01.12"
+            android:textColor="#b9b9b9" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" ~ "
+            android:textColor="#b9b9b9"
+            />
+        <TextView
+            android:id="@+id/endTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2018.01.19"
+            android:textColor="#b9b9b9" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추가 주차"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/weekBar"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:bsb_auto_adjust_section_mark="true"
+        app:bsb_track_color="#b9b9b9"
+        app:bsb_second_track_color="#ff0000"
+        app:bsb_thumb_color="#ff0000"
+        app:bsb_thumb_radius="1dp"
+        app:bsb_section_count="2"
+        app:bsb_section_text_position="below_section_mark"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_thumb_text_size="18dp"
+        app:bsb_touch_to_seek="true"
+        app:bsb_min="1"
+        app:bsb_max="3"
+        app:bsb_progress="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="최대 인원"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/peopleBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bsb_auto_adjust_section_mark="true"
+        app:bsb_track_color="#b9b9b9"
+        app:bsb_second_track_color="#ff0000"
+        app:bsb_thumb_color="#ff0000"
+        app:bsb_thumb_radius="1dp"
+        app:bsb_section_count="2"
+        app:bsb_section_text_position="below_section_mark"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_thumb_text_size="18dp"
+        app:bsb_touch_to_seek="true"
+        app:bsb_min="1"
+        app:bsb_max="3"
+        app:bsb_progress="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="강의 시간"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/halfTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ee2b47"
+            android:text="30분"/>
+
+        <com.fanwe.lib.switchbutton.FSwitchButton
+            android:id="@+id/timeSwitchButton"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <View
+                android:id="@id/lib_sb_view_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dadada"/>
+
+            <View
+                android:id="@id/lib_sb_view_checked"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dadada"/>
+
+            <View
+                android:id="@id/lib_sb_view_thumb"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@color/white"/>
+        </com.fanwe.lib.switchbutton.FSwitchButton>
+
+        <TextView
+            android:id="@+id/hourTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시간"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/cancelImageLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/cancelImageView"
+                android:layout_width="21.25dp"
+                android:layout_height="11.75dp"
+                android:src="@drawable/cancel_botton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/writeImageLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/writeImageView"
+                android:layout_width="103.75dp"
+                android:layout_height="24dp"
+                android:src="@drawable/circle_check_botton_inact" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
